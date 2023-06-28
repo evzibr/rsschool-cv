@@ -2,7 +2,7 @@
 
 ## Contact information
 
-* **E-mail**: [evzibreva@gmail.com](evzibreva@gmail.com)
+* **E-mail**: evzibreva@gmail.com
 * **Phone**: +4917625847677
 * **LinkedIn**: [https://www.linkedin.com/in/evgeniya-zibreva/](https://www.linkedin.com/in/evgeniya-zibreva/) 
 * **GitHub**: [https://github.com/evzibr](https://github.com/evzibr) 
@@ -45,20 +45,21 @@ multiply = function (a, b) {
 
 ## Work experience
 
-* **01.2015 – 09.2015**: Picture editor at home24 (Berlin, Germany)
-* **10.2016 – 06.2020**: Content Manager at s.Oliver (Rottendorf, Germany)
-* **11.2020 – 11.2021**: Graphic Designer at Outdooractive (Immenstadt, Germany)
-* **01.2022 – 07.2022**: Web-Designer/Frontend Developer - HTML/CSS at SoftTec (Sonthofen, Germany)
 * **09.2022 – Current time**: Frontend Developer - HTML/SCSS at LOUIS Internet (Remote, Germany)
+* **01.2022 – 07.2022**: Web-Designer/Frontend Developer - HTML/CSS at SoftTec (Sonthofen, Germany)
+* **11.2020 – 11.2021**: Graphic Designer at Outdooractive (Immenstadt, Germany)
+* **10.2016 – 06.2020**: Content Manager at s.Oliver (Rottendorf, Germany)
+* **01.2015 – 09.2015**: Picture editor at home24 (Berlin, Germany)
 
 ------------
 
 
 ## Education
 
+* **10.2012 – 09.2014**: MSc in Communication and Media Engineering (Offenburg, Germany)
 * **09.2008 – 06.2012**: BSc in Technology and Design of Electronic Devices (Kazan, Russia)
 * **09.2008 – 06.2012**: Secondary High Education: Technical Translation EN/RU (Kazan, Russia)
-* **10.2012 – 09.2014**: MSc in Communication and Media Engineering (Offenburg, Germany)
+
 
 ------------
 
@@ -81,5 +82,3 @@ multiply = function (a, b) {
 * **Spanish**: A1.1    
 
 ------------
-
-
