@@ -2,10 +2,10 @@
 
 ## Contact information
 
-* **E-mail**: evzibreva@gmail.com
+* **E-mail**: [evzibreva@gmail.com](evzibreva@gmail.com)
 * **Phone**: +4917625847677
-* **LinkedIn**: https://www.linkedin.com/in/evgeniya-zibreva/
-* **GitHub**: https://github.com/evzibr
+* **LinkedIn**: [https://www.linkedin.com/in/evgeniya-zibreva/](https://www.linkedin.com/in/evgeniya-zibreva/) 
+* **GitHub**: [https://github.com/evzibr](https://github.com/evzibr) 
 * **Discord**: Evgeniya Zibreva (@evzibr)
 
 ------------
