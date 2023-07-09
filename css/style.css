@@ -31,6 +31,11 @@ body {
   line-height: 1.5;
   color: #27374d;
 }
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
 
 .menu {
   margin-bottom: 2rem;
@@ -39,7 +44,12 @@ body {
   font-size: 1rem;
   padding: 1.5rem 2rem 1.5rem 0;
   width: 100%;
-  background-color: #ffdd00;
+  background-color: #ffd93d;
+}
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__items {
@@ -58,8 +68,8 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background-color: #ffdd00;
-  height: 4px;
+  background-color: #ffd93d;
+  height: 3px;
   width: 0%;
   left: 0;
   top: 1.4rem;
@@ -75,8 +85,14 @@ body {
   margin: 0 auto;
 }
 .content__block--inside {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 4.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .content__block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .content__intro {
@@ -88,19 +104,30 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .content__intro {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+}
 
 .text__intro {
   margin-top: 1rem;
   font-size: 1.75rem;
 }
+@media screen and (max-width: 1024px) {
+  .text__intro {
+    font-size: 1.5rem;
+  }
+}
 
 .headline__h1 {
   font-size: 4rem;
   text-transform: uppercase;
-  text-align: right;
+  line-height: 1.3;
 }
 .headline__h1--second {
-  text-align: right;
   font-weight: 300;
   position: relative;
 }
@@ -108,12 +135,17 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background-color: #ffdd00;
+  background-color: #ffd93d;
   height: 2rem;
   width: 90%;
   left: 2.813rem;
   bottom: 0.3rem;
   z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .headline__h1 {
+    font-size: 3rem;
+  }
 }
 
 .headline__h2 {
@@ -121,27 +153,28 @@ body {
   position: relative;
   display: inline-block;
 }
-.headline__h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #ffdd00;
-  height: 0.5rem;
-  width: 3rem;
-  top: 55%;
-  left: -4rem;
+@media screen and (max-width: 1024px) {
+  .headline__h2::before {
+    content: "";
+    display: none;
+  }
 }
 
 .image__cv {
   height: 18rem;
   border-radius: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .image__cv {
+    height: 15rem;
+  }
+}
 
-.contact__icon {
+.social__icon {
   height: 2.5rem;
   width: 2.5rem;
   padding: 0.6rem;
-  background-color: #ffdd00;
+  background-color: #ffd93d;
 }
 
 .contact__items {
@@ -159,7 +192,6 @@ body {
 .contact__link {
   color: #27374d;
   text-decoration: none;
-  font-size: 1.5rem;
   position: relative;
 }
 .contact__link::after {
@@ -167,14 +199,14 @@ body {
   position: absolute;
   display: block;
   background-color: #fff;
-  height: 6px;
+  height: 4px;
   width: 0%;
   left: 0;
-  bottom: -0.2rem;
+  bottom: -0.4rem;
   transition: 0.3s;
 }
 .contact__link:hover::after {
-  background-color: #ffdd00;
+  background-color: #ffd93d;
   width: 107%;
 }
 
@@ -193,9 +225,60 @@ body {
 
 .skills__item {
   padding: 0.25rem 0.75rem;
-  background-color: #ffdd00;
+  background-color: #ffd93d;
 }
 
 .code__example {
   background-color: rgba(221, 230, 237, 0.5);
+  white-space: pre-wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+.timeline:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.timeline__date {
+  font-weight: 700;
+  display: inline-block;
+  background-color: #ffd93d;
+  padding: 0.25rem 0.75rem;
+}
+
+.projects {
+  line-height: 1.8;
+}
+
+.projects__item:not(:last-child) {
+  list-style-type: disc;
+  color: #ffd93d;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 1rem;
+  padding: 1.5rem 2rem 1.5rem 0;
+  width: 100%;
+  background-color: #ffd93d;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__svg {
+  display: flex;
+  align-items: center;
+}
+
+.footer__year {
+  font-weight: 500;
+}
+
+.rss__icon {
+  width: 4rem;
 }/*# sourceMappingURL=style.css.map */

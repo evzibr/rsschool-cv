@@ -26,22 +26,21 @@ html {
   scroll-behavior: smooth;
 }
 
-// Variables
+// Color Variables
 $color-dark: #27374d;
-$color-accent: #ffdd00;
+$color-accent: #ffd93d;
 $color-light: #dde6ed;
 $color-white: #fff;
-
-$h1: 4rem;
-$h2: 2rem;
-
-// #27374D #526D82 #9DB2BF #DDE6ED
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
   color: $color-dark;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.25rem;
+  }
 }
 
 // Navigation
@@ -52,6 +51,10 @@ body {
   padding: 1.5rem 2rem 1.5rem 0;
   width: 100%;
   background-color: $color-accent;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .menu__items {
@@ -71,7 +74,7 @@ body {
     position: absolute;
     display: block;
     background-color: $color-accent;
-    height: 4px;
+    height: 3px;
     width: 0%;
     left: 0;
     top: 1.4rem;
@@ -91,11 +94,17 @@ body {
   margin: 0 auto;
 
   &--inside {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
+// Introduction
 .content__intro {
   max-width: 60rem;
   margin-top: 7rem;
@@ -104,22 +113,29 @@ body {
   gap: 5rem;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .text__intro {
   margin-top: 1rem;
   font-size: 1.75rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 }
 
-// Typography
-
 .headline__h1 {
-  font-size: $h1;
+  font-size: 4rem;
   text-transform: uppercase;
-  text-align: right;
+  line-height: 1.3;
 
   &--second {
-    text-align: right;
     font-weight: 300;
     position: relative;
 
@@ -135,26 +151,33 @@ body {
       z-index: -1;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+  }
 }
 
 .headline__h2 {
-  font-size: $h2;
+  font-size: 2rem;
   position: relative;
   display: inline-block;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: $color-accent;
-    // height: 0.5rem;
-    // width: 80%;
-    // top: -0.5rem;
-    // left: -1rem;
-    height: 0.5rem;
-    width: 3rem;
-    top: 55%;
-    left: -4rem;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   background-color: $color-accent;
+  //   height: 0.5rem;
+  //   width: 3rem;
+  //   top: 55%;
+  //   left: -4rem;
+  // }
+
+  @media screen and (max-width: 1024px) {
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 }
 
@@ -163,9 +186,13 @@ body {
 .image__cv {
   height: 18rem;
   border-radius: 50%;
+
+  @media screen and (max-width: 1024px) {
+    height: 15rem;
+  }
 }
 
-.contact__icon {
+.social__icon {
   height: 2.5rem;
   width: 2.5rem;
   padding: 0.6rem;
@@ -188,7 +215,6 @@ body {
 .contact__link {
   color: $color-dark;
   text-decoration: none;
-  font-size: 1.5rem;
   position: relative;
 
   &::after {
@@ -196,10 +222,10 @@ body {
     position: absolute;
     display: block;
     background-color: $color-white;
-    height: 6px;
+    height: 4px;
     width: 0%;
     left: 0;
-    bottom: -0.2rem;
+    bottom: -0.4rem;
     transition: 0.3s;
   }
 
@@ -217,19 +243,10 @@ body {
 }
 
 // Section Skills
-
 .skills__items {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-}
-
-.skills__item::before {
-  // content: "• ";
-  // color: $color-accent;
-  // height: 1rem;
-  // width: 1rem;
-  // font-size: 2rem;
 }
 
 .skills__item {
@@ -238,6 +255,59 @@ body {
 }
 
 .code__example {
-  margin-top
   background-color: rgba($color-light, 0.5);
+  white-space: pre-wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+// Work experience
+
+.timeline:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.timeline__date {
+  font-weight: 700;
+  display: inline-block;
+  background-color: $color-accent;
+  padding: 0.25rem 0.75rem;
+}
+
+// Projects
+.projects {
+  line-height: 1.8;
+}
+
+.projects__item:not(:last-child) {
+  list-style-type: disc;
+  color: $color-accent;
+}
+
+// Footer
+footer {
+  position: sticky;
+  font-size: 1rem;
+  padding: 1.5rem 2rem 1.5rem 0;
+  width: 100%;
+  background-color: $color-accent;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__svg {
+  display: flex;
+  align-items: center;
+}
+
+.footer__year {
+  font-weight: 500;
+}
+
+.rss__icon {
+  width: 4rem;
 }
