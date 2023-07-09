@@ -1,0 +1,243 @@
+// CSS Reset & main settings
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Variables
+$color-dark: #27374d;
+$color-accent: #ffdd00;
+$color-light: #dde6ed;
+$color-white: #fff;
+
+$h1: 4rem;
+$h2: 2rem;
+
+// #27374D #526D82 #9DB2BF #DDE6ED
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: $color-dark;
+}
+
+// Navigation
+.menu {
+  margin-bottom: 2rem;
+  position: sticky;
+  font-size: 1rem;
+  padding: 1.5rem 2rem 1.5rem 0;
+  width: 100%;
+  background-color: $color-accent;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: $color-dark;
+  font-weight: 500;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $color-accent;
+    height: 4px;
+    width: 0%;
+    left: 0;
+    top: 1.4rem;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    background-color: $color-dark;
+    width: 107%;
+  }
+}
+
+// General content blocks
+
+.content__block {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  &--inside {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.content__intro {
+  max-width: 60rem;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__intro {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+}
+
+// Typography
+
+.headline__h1 {
+  font-size: $h1;
+  text-transform: uppercase;
+  text-align: right;
+
+  &--second {
+    text-align: right;
+    font-weight: 300;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $color-accent;
+      height: 2rem;
+      width: 90%;
+      left: 2.813rem;
+      bottom: 0.3rem;
+      z-index: -1;
+    }
+  }
+}
+
+.headline__h2 {
+  font-size: $h2;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $color-accent;
+    // height: 0.5rem;
+    // width: 80%;
+    // top: -0.5rem;
+    // left: -1rem;
+    height: 0.5rem;
+    width: 3rem;
+    top: 55%;
+    left: -4rem;
+  }
+}
+
+// Graphics
+
+.image__cv {
+  height: 18rem;
+  border-radius: 50%;
+}
+
+.contact__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.6rem;
+  background-color: $color-accent;
+}
+
+// Section Contacts
+
+.contact__items {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.contact__item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact__link {
+  color: $color-dark;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $color-white;
+    height: 6px;
+    width: 0%;
+    left: 0;
+    bottom: -0.2rem;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    background-color: $color-accent;
+    width: 107%;
+  }
+}
+
+.contact__info {
+  color: $color-dark;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+// Section Skills
+
+.skills__items {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skills__item::before {
+  // content: "• ";
+  // color: $color-accent;
+  // height: 1rem;
+  // width: 1rem;
+  // font-size: 2rem;
+}
+
+.skills__item {
+  padding: 0.25rem 0.75rem;
+  background-color: $color-accent;
+}
+
+.code__example {
+  margin-top
+  background-color: rgba($color-light, 0.5);
+}
