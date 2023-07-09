@@ -1,13 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>CV for RS Scool</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon_cv.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Evgeniya Zibreva - CV</title>
 </head>
+
 <body>
-  <h1>Hey there!</h1>
+  <header>
+    <nav class="menu">
+      <ul class="menu__items">
+        <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+        <li class="menu__item"><a class="menu__link" href="#work">Work experience</a></li>
+        <li class="menu__item"><a class="menu__link" href="#education">Education</a></li>
+        <li class="menu__item"><a class="menu__link" href="#courses">Courses</a></li>
+        <li class="menu__item"><a class="menu__link" href="#languages">Languages</a></li>
+        <li class="menu__item"><a class="menu__link" href="#code">Code example</a></li>
+      </ul>
+    </nav>
+
+    <section class="content__block content__intro" id="about">
+      <img src="/rsschool-cv/assets/img/evzibr_square.jpg" alt="CV image" class="image__cv">
+      <div class="headline__name">
+        <h1 class="headline__h1">Evgeniya
+          <span class="headline__h1 headline__h1--second">Zibreva</span>
+        </h1>
+        <p class="text__intro">
+          Hey there, I am Evgeniya - a Frontend Developer with focus on SCSS and HTML in one of the Web-Agencies
+          in
+          Germany. Being keen on learning new things and growing in the area of Web-Development, I am currently
+          participating in a js-course at RS School.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="content__block" id="contact">
+      <h2 class="headline__h2">Contact</h2>
+      <ul class="content__block--inside contact__items">
+        <li class="contact__item">
+          <img src="/rsschool-cv/assets/svg/envelope_solid.svg" alt="Envelop icon" class="social__icon">
+          <a href="mailto:evzibreva@gmail.com" class="contact__link" target="_blank">evzibreva@gmail.com</a>
+        </li>
+        <li class="contact__item">
+          <img src="/rsschool-cv/assets/svg/linkedin.svg" alt="LinkedIn icon" class="social__icon">
+          <a href="https://www.linkedin.com/in/evgeniya-zibreva " class="contact__link" target="_blank">LinkedIn</a>
+        </li>
+        <li class="contact__item">
+          <img src="/rsschool-cv/assets/svg/github.svg" alt="GitHub icon" class="social__icon">
+          <a href="https://github.com/evzibr" class="contact__link" target="_blank">GitHub</a>
+        </li>
+        <li class="contact__item">
+          <img src="/rsschool-cv/assets/svg/discord.svg" alt="Discord icon" class="social__icon">
+          <span class="contact__info">Evgeniya Zibreva (@evzibr)</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content__block" id="skills">
+      <h2 class="headline__h2">Skills</h2>
+      <div class="content__block--inside">
+        <ul class="skills__items">
+          <li class="skills__item">HTML</li>
+          <li class="skills__item">CSS / SCSS</li>
+          <li class="skills__item">git</li>
+          <li class="skills__item">Jira</li>
+          <li class="skills__item">Adobe CC (XD, Photoshop, InDesign)</li>
+          <li class="skills__item">TYPO3 CMS</li>
+          <li class="skills__item">Saleseforce Commerce Cloud</li>
+          <li class="skills__item">MS Office</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content__block" id="work">
+      <h2 class="headline__h2">Work experience</h2>
+      <div class="content__block--inside">
+        <div class="timeline">
+          <div class="timeline__date">
+            09.2022 – Current time
+          </div>
+          <div class="timeline__place">
+            Frontend Developer - HTML/SCSS at LOUIS Internet (Remote, Germany)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            01.2022 – 07.2022
+          </div>
+          <div class="timeline__place">
+            Web-Designer/Frontend Developer - HTML/CSS at SoftTec (Sonthofen, Germany)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            11.2020 – 11.2021
+          </div>
+          <div class="timeline__place">
+            Graphic Designer at Outdooractive (Immenstadt, Germany)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            10.2016 – 06.2020
+          </div>
+          <div class="timeline__place">
+            Content Manager at s.Oliver (Rottendorf, Germany)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            01.2015 – 09.2015
+          </div>
+          <div class="timeline__place">
+            Picture editor at home24 (Berlin, Germany)
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="content__block" id="education">
+      <h2 class="headline__h2">Education</h2>
+      <div class="content__block--inside">
+        <div class="timeline">
+          <div class="timeline__date">
+            10.2012 – 09.2014
+          </div>
+          <div class="timeline__place">
+            MSc in Communication and Media Engineering (Offenburg, Germany)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            09.2008 – 06.2012
+          </div>
+          <div class="timeline__place">
+            BSc in Technology and Design of Electronic Devices (Kazan, Russia)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            09.2008 – 06.2012
+          </div>
+          <div class="timeline__place">
+            Secondary High Education: Technical Translation EN/RU (Kazan, Russia)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__block" id="courses">
+      <h2 class="headline__h2">Courses &amp; Projects</h2>
+      <div class="content__block--inside">
+        <ul class="projects">
+          <li class="projects__item"><a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank"
+              class="contact__link">Advanced
+              CSS and Sass</a></li>
+          <li class="projects__item"><a
+              href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+              target="_blank" class="contact__link">Build Responsive Real-World
+              Websites with HTML and CSS</a></li>
+          <li class="projects__item"><a href="https://www.udemy.com/course/ui-ux-web-design-using-adobe-xd/"
+              target="_blank" class="contact__link">User Experience Design
+              Essentials - Adobe XD UI UX Design</a></li>
+          <li class="projects__item"><a href="https://www.udemy.com/course/indesign-tutorial-basics-course/"
+              target="_blank" class="contact__link">Adobe InDesign CC -
+              Essentials
+              Training Course</a></li>
+          <li class="projects__item"><span>Projects: there are no links available for my projects just yet as I have
+              mainly developed different features for companies' clients.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content__block" id="languages">
+      <h2 class="headline__h2">Languages</h2>
+      <div class="content__block--inside">
+        <div class="timeline">
+          <div class="timeline__date">
+            English
+          </div>
+          <div class="timeline__place">
+            full working proficiency (around C1)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            German
+          </div>
+          <div class="timeline__place">
+            full working proficiency (B2/C1)
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            Russian
+          </div>
+          <div class="timeline__place">
+            first language
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__date">
+            Spanish
+          </div>
+          <div class="timeline__place">
+            A1.1
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__block" id="code">
+      <h2 class="headline__h2">Code example</h2>
+      <div class="content__block--inside">
+        <pre class="code__example">
+          <code>
+multiply = function (a, b) {
+  return a * b;
+}
+          </code>
+        </pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__svg">
+      <img src="/rsschool-cv/assets/svg/github.svg" alt="GitHub icon" class="social__icon">
+      <a href="https://github.com/evzibr" class="menu__link" target="_blank">GitHub</a>
+    </div>
+    <span class="footer__year">2023</span>
+    <div class="github">
+      <a href="https://rs.school/js/" class="" target="_blank">
+        <img src="/rsschool-cv/assets/svg/rs_school_js.svg" alt="GitHub icon" class="rss__icon"></a>
+    </div>
+  </footer>
 </body>
+
 </html>
